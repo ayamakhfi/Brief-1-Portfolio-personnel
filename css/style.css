@@ -114,6 +114,7 @@ a {
   align-items: center;
   height: 72px;
 }
+ 
 
 .logo {
   font-size: 20px;
@@ -130,7 +131,8 @@ a {
   color: var(--couleur-texte-doux);
 }
 
-.menu a.active {color: var(--couleur-principale);
+.menu a.active {
+  color: var(--couleur-principale);
   font-weight: 600;
 
 }
@@ -166,7 +168,7 @@ a {
   margin-top: 8px;
   margin-bottom: 24px;
   font-size: 20px;
-  color: var(--couleur-texte-doux);
+  /*color: var(--couleur-texte-doux);*/
 }
 
 .presentation .bouton {
@@ -188,7 +190,7 @@ a {
   background-color: var(--couleur-fond-clair);
 }
 
-.section h2 {
+.section h1 {
   font-size: 36px;
 }
 
@@ -199,9 +201,10 @@ a {
 }
 
 /* ---------- 6. Compétences ---------- */
-.competences {
+#competences {
   display: flex;
   gap: 16px;
+  margin-right: 20px;
 }
 
 .competences li {
@@ -210,7 +213,11 @@ a {
   border-radius: var(--rayon);
   font-weight: 600;
   background-color: var(--couleur-fond);
+  margin-right: 20px;
 }
+
+/* ---------- 6. parcours ---------- */
+
 
 
 /* ---------- projets---------- */
@@ -297,3 +304,78 @@ a {
   text-align: center;
   color: var(--couleur-texte-doux);
 }
+
+#parcours {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 80px;
+}
+.parcours-list dd{
+  margin-bottom: 50px;
+ 
+}
+
+    #objectifs {
+    background-color: #f3f5f9;
+     min-height: 300px;
+    padding: 25px 20px;
+    margin-top: 30px;
+}
+#objectifs h1{
+  margin-bottom: 40px;
+}
+.objectifs__liste{
+  display: grid;
+    grid-template-columns: 1fr 1fr ;
+     grid-template-rows: 1fr 1fr 1fr 1fr ;
+    gap: 30px 15px;
+}
+
+.objectif{
+  display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.objectif img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 70%;
+    flex-shrink: 0;
+}
+
+.objectif p:first-child {
+    font-weight: 100px;
+    font-size: 18px;
+    color: var(--couleur-texte);
+    margin: 0 0 3px;
+}
+
+.objectif p:last-child {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #333;
+    margin: 0;}
+
+.objectif:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.objectif:nth-child(2) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.objectif:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.objectif:nth-child(4) {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+
