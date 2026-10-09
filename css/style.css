@@ -204,7 +204,7 @@ a {
 #competences {
   display: flex;
   gap: 16px;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .competences li {
@@ -225,18 +225,28 @@ a {
 
 /* ---------- 7. Projets ---------- */
 /* Les projets sont empilés les uns sous les autres. */
+
+ 
 .projet {
   display: flex;
   align-items: center;
   gap: 32px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
   padding: 24px;
   border: 1px solid var(--couleur-bordure);
   border-radius: var(--rayon);
+  
+}
+
+.projets{
+    display:grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 300px 300px;
+    gap: 20px;
 }
 
 .projet__image {
-  width: 320px;
+  width: 120px;
   height: 200px;
   object-fit: cover;
   border-radius: var(--rayon);
@@ -249,20 +259,25 @@ a {
 
 .projet p {
   color: var(--couleur-texte-doux);
+  font-size: 10px;
 }
 
 .technologies {
   display: flex;
-  gap: 8px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  gap: 6px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .technologies li {
   padding: 4px 12px;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 12px;
   background-color: var(--couleur-projet-clair);
+}
+
+.projet .lien{
+ font-size:14px;
 }
 
 /* ---------- 8. Contact ---------- */
@@ -309,11 +324,17 @@ a {
   position: relative;
   margin-top: 20px;
   padding-left: 80px;
+    background-color: #f3f5f9;
 }
+
+
+
+
 .parcours-list dd{
   margin-bottom: 50px;
  
 }
+
 
     #objectifs {
     background-color: #f3f5f9;
@@ -377,5 +398,8 @@ a {
     grid-column: 2;
     grid-row: 4;
 }
+
+
+
 
 
