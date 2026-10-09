@@ -201,19 +201,24 @@ a {
 }
 
 /* ---------- 6. Compétences ---------- */
-#competences {
+#competences{
   display: flex;
-  gap: 16px;
-  margin-left: 20px;
+  max-width: 400px;
+}
+.competences {
+  display:grid;
+  gap: 10px;
+  grid-template-columns: 150px 150px ;
+ 
 }
 
 .competences li {
-  padding: 10px 22px;
+  padding: 10px 15px;
   border: 1px solid var(--couleur-bordure);
   border-radius: var(--rayon);
   font-weight: 600;
   background-color: var(--couleur-fond);
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 /* ---------- 6. parcours ---------- */
@@ -324,7 +329,7 @@ a {
   position: relative;
   margin-top: 20px;
   padding-left: 80px;
-    background-color: #f3f5f9;
+  max-width: 700px;
 }
 
 
