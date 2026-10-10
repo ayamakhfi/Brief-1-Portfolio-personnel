@@ -106,6 +106,10 @@ a {
 /* ---------- 3. En-tête ---------- */
 .en-tete {
   border-bottom: 1px solid var(--couleur-bordure);
+  position:sticky;
+  top:0;
+  z-index: 1000;
+  background-color:var(--couleur-fond);
 }
 
 .en-tete__contenu {
@@ -113,6 +117,7 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 72px;
+  
 }
  
 
@@ -188,6 +193,8 @@ a {
 
 .section--claire {
   background-color: var(--couleur-fond-clair);
+  max-height: fit-content;
+  padding: 10px;
 }
 
 .section h1 {
@@ -202,9 +209,11 @@ a {
 
 /* ---------- 6. Compétences ---------- */
 #competences{
-  margin: 0;
-    padding: 40px 0;
-    max-width: none;
+  margin: 20px;
+   padding:40px 0px;
+   max-width: none;
+      
+ 
 }
 .competences {
   display:grid;
@@ -212,6 +221,8 @@ a {
   grid-template-columns: 150px 150px ;
  
 }
+
+
 
 .competences li {
   padding: 10px 15px;
@@ -287,6 +298,10 @@ a {
 }
 
 /* ---------- 8. Contact ---------- */
+#contact {
+  margin:40px 0px 60px ;
+}
+
 .formulaire {
   max-width: 560px;
 }
@@ -327,7 +342,7 @@ a {
 }
 
 #parcours {
-   margin: 0;
+   margin: 20px;
     padding: 40px 0;
     max-width: none;
 }
@@ -337,12 +352,10 @@ a {
 
 .parcours-list dd{
   margin-bottom: 50px;
- 
 }
 
 
-    #objectifs {
-    background-color: #f3f5f9;
+ #objectifs {
      min-height: 300px;
     padding: 25px 20px;
     margin-top: 30px;
@@ -407,7 +420,20 @@ a {
 .competences-parcours {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 30px;
-    align-items: start;
+    align-items: stretch;
 }
+
+#parcours{
+   grid-column: 1;
+   grid-row: 1;
+}
+
+#competences{
+   grid-column: 2;
+   grid-row: 1;
+}
+
+
 
