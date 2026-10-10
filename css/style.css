@@ -202,8 +202,9 @@ a {
 
 /* ---------- 6. Compétences ---------- */
 #competences{
-  display: flex;
-  max-width: 400px;
+  margin: 0;
+    padding: 40px 0;
+    max-width: none;
 }
 .competences {
   display:grid;
@@ -326,10 +327,9 @@ a {
 }
 
 #parcours {
-  position: relative;
-  margin-top: 20px;
-  padding-left: 80px;
-  max-width: 700px;
+   margin: 0;
+    padding: 40px 0;
+    max-width: none;
 }
 
 
@@ -404,7 +404,10 @@ a {
     grid-row: 4;
 }
 
-
-
-
+.competences-parcours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
 
