@@ -173,7 +173,7 @@ a {
   margin-top: 8px;
   margin-bottom: 24px;
   font-size: 20px;
-  /*color: var(--couleur-texte-doux);*/
+  color: var(--couleur-texte-doux);
 }
 
 .presentation .bouton {
@@ -233,10 +233,6 @@ a {
   margin-right: 50px;
 }
 
-/* ---------- 6. parcours ---------- */
-
-
-
 /* ---------- projets---------- */
 
 
@@ -254,7 +250,7 @@ a {
   border-radius: var(--rayon);
   
 }
-
+/* ---------- matrice ---------- */
 .projets{
     display:grid;
     grid-template-columns: 500px 500px;
@@ -341,11 +337,14 @@ a {
   color: var(--couleur-texte-doux);
 }
 
+/* ---------- 6. parcours ---------- */
+
 #parcours {
    margin: 20px;
     padding: 40px 0;
     max-width: none;
 }
+
 
 .parcours-list::before{
   content: "";
@@ -382,6 +381,30 @@ a {
   margin-bottom: 40px;
 }
 
+/* ---------- la position de parcours et compétences ---------- */
+
+.competences-parcours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+
+#parcours{
+   grid-column: 1;
+   grid-row: 1;
+}
+
+#competences{
+   grid-column: 2;
+   grid-row: 1;
+}
+
+
+
+
+
+/* ---------- 9. objectifs ---------- */
 
  #objectifs {
      min-height: 300px;
@@ -400,8 +423,7 @@ a {
 
 .objectif{
   display: flex;
-    align-items: center;
-    gap: 12px;
+    gap: 20px;
 }
 
 .objectif img {
@@ -445,23 +467,7 @@ a {
     grid-row: 4;
 }
 
-.competences-parcours {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 30px;
-    align-items: stretch;
-}
 
-#parcours{
-   grid-column: 1;
-   grid-row: 1;
-}
-
-#competences{
-   grid-column: 2;
-   grid-row: 1;
-}
 
 
 
