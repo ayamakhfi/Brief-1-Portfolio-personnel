@@ -434,14 +434,13 @@ a {
     flex-shrink: 0;
 }
 
-.objectif p:first-child {
-    font-weight: 100px;
+.objectif h2 {
     font-size: 18px;
     color: var(--couleur-texte);
     margin: 0 0 3px;
 }
 
-.objectif p:last-child {
+.objectif p {
     font-size: 15px;
     line-height: 1.4;
     color: #333;
